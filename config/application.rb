@@ -45,10 +45,10 @@ end
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-  address:              'sirius.uberspace.de',
+  address:              'lepus.uberspace.de',
   port:                 587,
-  domain:               'sirius.uberspace.de',
-  user_name:            'base-mailer',
+  domain:               'lepus.uberspace.de',
+  user_name:            'hmktnt-mailer',
   password:             'l3tm3s3nd3m41lS!',
   authentication:       'login',
   enable_starttls_auto: true

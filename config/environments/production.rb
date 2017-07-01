@@ -96,7 +96,7 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
-  config.action_mailer.default_url_options = {host: 'http://base.sirius.uberspace.de'}
+  config.action_mailer.default_url_options = {host: 'http://hmktnt.lepus.uberspace.de'}
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false

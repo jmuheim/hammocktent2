@@ -9,14 +9,14 @@ require 'mina/git'
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :application_name, 'Base'
-set :domain, 'sirius.uberspace.de'
-set :deploy_to, '/home/base/rails'
-set :repository, 'git@github.com:jmuheim/base.git'
+set :application_name, 'HammockTent 2.0'
+set :domain, 'lepus.uberspace.de'
+set :deploy_to, '/home/hmktnt/rails'
+set :repository, 'git@github.com:jmuheim/hammocktent2.git'
 set :branch, ENV['branch'] || 'master'
 
 # Optional settings:
-set :user, 'base'          # Username in the server to SSH to.
+set :user, 'hmktnt'          # Username in the server to SSH to.
 #   set :port, '30000'           # SSH port number.
 set :forward_agent, true   # SSH forward_agent.
 
