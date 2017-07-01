@@ -6,7 +6,7 @@ nav#navigation.container
       .navbar-header
         // Place brand before the "Toggle navigation" button to have an intuitive focus order (on the Bootstrap examples page it's after the button which seems unintuitive)
         = link_to root_path, class: home_link_class, id: 'logo' do
-          = t('.home')
+          = image_tag 'hammocktent.png', alt: t('.home')
           span.sr-only =< t('.go_to_home_page')
 
         button#toggle_navigation.navbar-toggle.collapsed aria-controls="bs-navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button"
