@@ -1,5 +1,5 @@
 # This is not intended to be used for negative expectations!
-module Base
+module HammockTent2
   module Matchers
     class HaveActiveNavigationItems
       def initialize(*items)

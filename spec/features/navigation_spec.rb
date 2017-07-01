@@ -11,7 +11,7 @@ describe 'Navigation' do
         visit root_path
 
         within 'nav' do
-          expect(page).to have_link 'Base'
+          expect(page).to have_link 'HammockTent 2.0'
 
           within '#content_navigation' do
             expect(page).to have_link 'Page test navigation title'
@@ -36,7 +36,7 @@ describe 'Navigation' do
         visit root_path
 
         within 'nav' do
-          expect(page).to have_link 'Base'
+          expect(page).to have_link 'HammockTent 2.0'
 
           within '#content_navigation' do
             expect(page).to have_link 'Page test navigation title'
@@ -61,7 +61,7 @@ describe 'Navigation' do
         visit root_path
 
         within 'nav' do
-          expect(page).to have_link 'Base'
+          expect(page).to have_link 'HammockTent 2.0'
 
           within '#content_navigation' do
             expect(page).to have_link 'Page test navigation title'

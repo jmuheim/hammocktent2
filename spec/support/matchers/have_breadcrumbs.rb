@@ -1,4 +1,4 @@
-module Base
+module HammockTent2
   module Matchers
     class HaveBreadcrumbs
       def initialize(*breadcrumbs)

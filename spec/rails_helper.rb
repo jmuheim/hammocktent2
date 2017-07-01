@@ -17,7 +17,7 @@ require 'capybara/rspec'
 require 'capybara-screenshot/rspec'
 
 # For capybara-screenshot, so when running a development server, the screenshots look better
-Capybara.asset_host = 'http://localhost:3001'
+Capybara.asset_host = 'http://localhost:3004'
 Capybara::Screenshot.register_filename_prefix_formatter(:rspec) do |example|
   "screenshot_#{example.description.gsub(/\W/, '-').gsub(/^.*\/spec\//, '')}"
 end
@@ -102,7 +102,7 @@ RSpec.configure do |config|
 end
 
 RSpec.configure do |config|
-  config.include Base::Matchers, type: :feature
+  config.include HammockTent2::Matchers, type: :feature
 end
 
 Shoulda::Matchers.configure do |config|

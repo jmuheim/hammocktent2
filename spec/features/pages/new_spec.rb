@@ -24,9 +24,9 @@ describe 'Creating page' do
 
     visit new_page_path
 
-    expect(page).to have_title 'Create Page - Base'
+    expect(page).to have_title 'Create Page - HammockTent 2.0'
     expect(page).to have_active_navigation_items 'Pages', 'Create Page'
-    expect(page).to have_breadcrumbs 'Base', 'Pages', 'Create'
+    expect(page).to have_breadcrumbs 'HammockTent 2.0', 'Pages', 'Create'
     expect(page).to have_headline 'Create Page'
 
     fill_in 'page_title',            with: 'new title'

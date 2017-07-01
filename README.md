@@ -1,10 +1,10 @@
-# TITLE
+# HammockTent 2.0
 
 TODO: Add badges!
 
-## Setting up project locally
+## Setting up hammocktent2 locally
 
-Live project: [ACCOUNT.SERVER.uberspace.de](http://ACCOUNT.SERVER.uberspace.de)
+Live hammocktent2: [ACCOUNT.SERVER.uberspace.de](http://ACCOUNT.SERVER.uberspace.de)
 
 Recommended environment:
 
@@ -14,14 +14,14 @@ Recommended environment:
 
 Setup:
 
-- `$ git clone git@github.com:GITHUB/PROJECT.git`
-- `$ cd PROJECT`
+- `$ git clone git@jmuheim.com:jmuheim/hammocktent2.git`
+- `$ cd hammocktent2`
 - `$ bundle install`
 - `$ cp db/config_example.yml db/config.yml`, then open `db/config.yml` and edit config
 - `$ rails db:setup`
 - `$ rails db:test:prepare`
 
-You can use [direnv](https://github.com/zimbatm/direnv) to automatically add `bin` to your `$PATH`. Otherwise you should always use `bundle exec` to run commands.
+You can use [direnv](https://jmuheim.com/zimbatm/direnv) to automatically add `bin` to your `$PATH`. Otherwise you should always use `bundle exec` to run commands.
 
 ## Requirements
 
@@ -30,21 +30,21 @@ You can use [direnv](https://github.com/zimbatm/direnv) to automatically add `bi
 
 ## Developing
 
-- In one terminal, enter `$ server` to start the development server using [rerun](https://github.com/alexch/rerun) (which will take care of restarting the server upon changes of important config files)
+- In one terminal, enter `$ server` to start the development server using [rerun](https://jmuheim.com/alexch/rerun) (which will take care of restarting the server upon changes of important config files)
 - In a second terminal, enter `$ guard` to start Guard, which automatically takes care of:
-    - executing tests using [Guard-RSpec](https://github.com/guard/guard-rspec)
-    - live reloading the page (HTML, JS and CSS) using [Guard-LiveReload](https://github.com/guard/guard-livereload)
-    - bundling using [Guard-Bundler](https://github.com/guard/guard-bundler)
-    - annotating models using [Guard-Annotate](https://github.com/cpjolicoeur/guard-annotate)
-    - migrating the DB using [Guard-Migrate](https://github.com/glanotte/guard-migrate)
+    - executing tests using [Guard-RSpec](https://jmuheim.com/guard/guard-rspec)
+    - live reloading the page (HTML, JS and CSS) using [Guard-LiveReload](https://jmuheim.com/guard/guard-livereload)
+    - bundling using [Guard-Bundler](https://jmuheim.com/guard/guard-bundler)
+    - annotating models using [Guard-Annotate](https://jmuheim.com/cpjolicoeur/guard-annotate)
+    - migrating the DB using [Guard-Migrate](https://jmuheim.com/glanotte/guard-migrate)
 - Open [http://localhost:PORT](http://localhost:PORT) in your browser (use whatever port you specified in `config/boot.rb`)
 
 ### Before merging a pull request
 
 Make sure that:
 
-- All CRUD functionality is covered (as far as possible) by [inherited_resources](https://github.com/josevalim/inherited_resources)
-- All authorization is done through [cancancan](https://github.com/CanCanCommunity/cancancan)
+- All CRUD functionality is covered (as far as possible) by [inherited_resources](https://jmuheim.com/josevalim/inherited_resources)
+- All authorization is done through [cancancan](https://jmuheim.com/CanCanCommunity/cancancan)
 - The [ability.rb](./app/models/ability.rb) file is thoroughly tested
 - Every action has a correlating feature spec file (nest them in folders similar to the nested routes' structure)
 - Every navigation item has a correlating spec in [navigation_spec.rb](./spec/features/navigation_spec.rb)
@@ -58,11 +58,11 @@ At the time being, [Bower](http://bower.io/) integration strategies for Rails ar
 
 ### I18n
 
-The [i18n-tasks](https://github.com/glebm/i18n-tasks) gem makes handling translations easily. It helps finding unused and not yet translated keys, and normalizes (e.g. sorts) the translation files.
+The [i18n-tasks](https://jmuheim.com/glebm/i18n-tasks) gem makes handling translations easily. It helps finding unused and not yet translated keys, and normalizes (e.g. sorts) the translation files.
 
 - `$ i18n-tasks normalize`, then commit
 - `$ i18n-tasks unused`, then remove unused keys and commit
-- `$ i18n-tasks add-missing -v 'TRANSLATE: %{value}'`, then translate everything (do a project search for `TRANSLATE:`) and commit
+- `$ i18n-tasks add-missing -v 'TRANSLATE: %{value}'`, then translate everything (do a hammocktent2 search for `TRANSLATE:`) and commit
 
 ## Testing
 

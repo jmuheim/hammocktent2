@@ -1,9 +1,9 @@
 ---
 en:
   app:
-    acronym: Base
-    name: Base Project
-    slogan: Pre-configured basic accessible Rails project. Fork me!
+    acronym: HammockTent 2.0
+    name: HammockTent 2.0
+    slogan: Possibly the most comfortable and versatile hammock in the world.
   buttons:
     save: Save
   'false': 'No'
@@ -11,7 +11,7 @@ en:
     news:
       title: Latest news
     show:
-      title: Welcome to Base!
+      title: Welcome to HammockTent 2.0!
     statistics:
       number_of_resource: Number of %{resource}
       title: Statistics

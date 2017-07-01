@@ -29,9 +29,9 @@ describe 'Editing page' do
 
     visit edit_page_path(@page)
 
-    expect(page).to have_title 'Edit Page test title - Base'
+    expect(page).to have_title 'Edit Page test title - HammockTent 2.0'
     expect(page).to have_active_navigation_items 'Cool parent page', 'Cool navigation title'
-    expect(page).to have_breadcrumbs 'Base', 'Cool parent page', 'Cool navigation title', 'Edit'
+    expect(page).to have_breadcrumbs 'HammockTent 2.0', 'Cool parent page', 'Cool navigation title', 'Edit'
     expect(page).to have_headline 'Edit Page test title'
 
     # Changing the parent disables the position select
