@@ -67,6 +67,8 @@ gem 'mini_magick' # Mini replacement for RMagick
 
 gem 'fancybox2-rails' # Fancybox (lightbox clone)
 
+gem 'font-kit-rails' # Awesome font kit for your rails app
+
 gem 'slugify' # Turn a string into its alphanumerical dashed equivalent
 
 gem 'pandoc-ruby' # Markdown parser and format converter (from/to Markdown, HTML, Docx, PDF, Epub, ODT...)

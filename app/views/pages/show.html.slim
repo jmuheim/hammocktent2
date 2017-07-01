@@ -2,7 +2,7 @@
   = headline_with_flash @page.title
 
   .row
-    .col-md-8
+    .col-md-12
       .markdown
         .lead
           = markdown indent_heading_level @page.lead_with_references, 1
@@ -10,7 +10,7 @@
         .content
           = markdown indent_heading_level @page.content_with_references, 1
 
-    .col-md-4.browsing
+    .sr-only.browsing
       == render 'browsing', page: @page
 
       - if can? :crud, @page
